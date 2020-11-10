@@ -12,6 +12,7 @@ html {
 body {
   color: white;
   font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(#550303ef, #000000ec);
 }
 
 h1 {
@@ -49,10 +50,6 @@ a {
 footer {
   font-size: 1rem;
   font-weight: bold;
-}
-
-.home {
-  background: radial-gradient(#550303ef, #000000ec);
 }
 
 .nav-container {
@@ -161,5 +158,72 @@ nav .order {
 
 .showcase .info h3 {
   padding-bottom: 3rem;
+}
+
+.features-container {
+  background: #323232;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.features-container .wave {
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  width: 100%;
+  z-index: -1;
+}
+
+.features {
+  min-height: 90vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.features .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+}
+
+.features .cards .card {
+  background: white;
+  margin: 0rem 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.features .cards .card h4 {
+  margin: 2rem 0rem 1rem 0rem;
+}
+
+.features .cards .card p {
+  padding: 2rem;
+}
+
+.features .cards .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
